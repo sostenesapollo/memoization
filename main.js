@@ -15,7 +15,18 @@ function memoize(fn) {
 
 const memoizedFib = memoize(fib)
 
-console.log(memoizedFib(41))
-console.log(memoizedFib(41))
-console.log(memoizedFib(40))
+console.time()
+console.log(memoizedFib(43))
+console.timeEnd()
+
+console.time()
+console.log(memoizedFib(43))
+console.timeEnd()
+
+console.time()
+console.log(memoizedFib(20))
+console.timeEnd()
+
+console.time()
 console.log(memoizedFib(6))
+console.timeEnd()
